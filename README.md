@@ -1,10 +1,10 @@
 # IS247-Group4   
 ## Group Members / Role : 
-- Mustafa Akpinar / 
+- Mustafa Akpinar / Data Analyst
 - Udoka Chimah  / 
-- Alana Nwosu / 
-- Abel Mekonen / 
-- Ashwin Selvarajasingham / 
+- Alana Nwosu / Programmer
+- Abel Mekonen / Project Manager
+- Ashwin Selvarajasingham / Programmer
 - Bethlehem Solomon /
                 
 ## Project Description:           
