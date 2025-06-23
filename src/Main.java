@@ -6,6 +6,8 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
+
+        //nofication choosing
         System.out.println("Hello and welcome!");
         System.out.println("Choose notification type:");
         System.out.println("Email: e");
@@ -29,6 +31,22 @@ public class Main {
             }
         }
         // notif = chosen notification type
+
+        //intial deposti
+        System.out.println("Enter initial deposit amount");
+        int deposit = input.nextInt();
+        w = 0;
+        while (w == 0){
+            if(deposit>0){
+                w++;
+            }else{
+                System.out.println("Invalid Input");
+                System.out.println("Enter initial deposit amount");
+                account = input.nextLine();
+            }
+        }
+        //deposit = inital deposit
+
 
 
 
