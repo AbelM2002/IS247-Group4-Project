@@ -15,3 +15,10 @@
 
 
 ## Project Links: 
+
+## Docker Overview
+
+Docker allows us to containerize the Java app.  
+We created a Dockerfile that uses the `openjdk:23` image, copies compiled code, and runs it with `java Main`.  
+To build the image: `docker build -t hello-java .`  
+To run the app in a container: `docker run hello-java`
