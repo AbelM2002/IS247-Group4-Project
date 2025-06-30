@@ -1,1 +1,55 @@
-adda
+import java.util.Objects;
+
+class Account{
+    private int balance;
+    private String notification;
+    private String contact;
+
+    public Account(int balance, String notification String contact) {
+        this.balance = balance;
+        this.notification = notification;
+        this.contact = contact;
+    }
+    }
+
+    public void balance() {
+        //System.out.println(notification);
+        System.out.println("balance is: " + balance);
+
+    }
+
+    public void deposit(int x){
+        balance = balance + x;
+        Notifly(x + " dollars have been deposited");
+        System.out.println(x + " dollars have been deposited");
+    }
+
+    public void withdraw(int x){
+        int temp = balance + x;
+        if(temp < 0){
+            System.out.println("overdrawn");
+            Notifly("account overdrawn");
+        }else{
+            balance = balance - x;
+            Notifly(x + " dollars have been withdrawn");
+            System.out.println(x + " dollars have been withdrawn");
+        }
+    }
+
+    private void Notifly(String s) {
+        if(Objects.equals(notification, "e")){
+            System.out.println(s);
+            System.out.println("to email"); //to contact
+            //place holder
+        } else if (Objects.equals(notification, "s")) {
+            System.out.println(s);
+            System.out.println("to sms"); //to contact
+            //place holder
+        }else if (Objects.equals(notification, "w")) {
+            System.out.println(s);
+            System.out.println("to whatsapp"); //to contact
+            //place holder
+        }
+    }
+
+}
