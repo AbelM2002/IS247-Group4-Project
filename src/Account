@@ -6,16 +6,22 @@ class Account{
     private String contact;
 
     public Account(int balance, String notification String contact) {
+        this.balance = balance;
+        this.notification = notification;
+        this.contact = contact;
+    }
     }
 
     public void balance() {
-        System.out.println(notification);
+        //System.out.println(notification);
+        System.out.println("balance is: " + balance);
 
     }
 
     public void deposit(int x){
         balance = balance + x;
         Notifly(x + " dollars have been deposited");
+        System.out.println(x + " dollars have been deposited");
     }
 
     public void withdraw(int x){
@@ -26,6 +32,7 @@ class Account{
         }else{
             balance = balance - x;
             Notifly(x + " dollars have been withdrawn");
+            System.out.println(x + " dollars have been withdrawn");
         }
     }
 
