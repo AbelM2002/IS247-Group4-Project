@@ -14,21 +14,21 @@ class Account{
 }
 
     public void balance() {
-        System.out.println("balance is: " + balance);
+        System.out.println("balance is: " + balance + "/n");
     }
 
     public void deposit(int x){
         balance = balance + x;
-        System.out.println(x + " dollars have been deposited");
+        System.out.println(x + " dollars have been deposited \n");
     }
 
     public void withdraw(int x){
         int temp = balance + x;
         if(temp < 0){
-            System.out.println("overdrawn");
+            System.out.println("overdrawn \n");
         }else{
             balance = balance - x;
-            System.out.println(x + " dollars have been withdrawn");
+            System.out.println(x + " dollars have been withdrawn \n");
         }
     }
 
