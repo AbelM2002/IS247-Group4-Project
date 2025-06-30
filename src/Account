@@ -3,8 +3,9 @@ import java.util.Objects;
 class Account{
     private int balance;
     private String notification;
+    private String contact;
 
-    public Account(int balance, String notification) {
+    public Account(int balance, String notification String contact) {
     }
 
     public void balance() {
@@ -31,15 +32,15 @@ class Account{
     private void Notifly(String s) {
         if(Objects.equals(notification, "e")){
             System.out.println(s);
-            System.out.println("to email");
+            System.out.println("to email"); //to contact
             //place holder
         } else if (Objects.equals(notification, "s")) {
             System.out.println(s);
-            System.out.println("to sms");
+            System.out.println("to sms"); //to contact
             //place holder
         }else if (Objects.equals(notification, "w")) {
             System.out.println(s);
-            System.out.println("to whatsapp");
+            System.out.println("to whatsapp"); //to contact
             //place holder
         }
     }
