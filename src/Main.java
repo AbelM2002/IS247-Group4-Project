@@ -51,9 +51,9 @@ public class Main {
         }
         //deposit = inital deposit
 
-        System.out.println("creating account...");
+        System.out.println("\n creating account...");
         Account account1 = new Account(deposit,notif,contact);
-        System.out.println("account created");
+        System.out.println("account created \n");
 
         int x = 0;
         int amount;
@@ -64,7 +64,10 @@ public class Main {
             System.out.println("Withdraw ... W");
             System.out.println("Quit ... Q");
             String in = input.nextLine();
-            System.out.println("h");
+            
+            while(Objects.equals(in, "")){
+                inputs2 = input.nextLine();
+            }
 
             if (Objects.equals(in, "Q")){
                 x++;
