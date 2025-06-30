@@ -32,6 +32,10 @@ public class Main {
         }
         // notif = chosen notification type
 
+        System.out.println("Enter Contact");
+        String contact = input.nextLine();
+        // contact = contact point
+
         //intial deposti
         System.out.println("Enter initial deposit amount");
         int deposit = input.nextInt();
