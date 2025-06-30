@@ -46,12 +46,14 @@ public class Main {
             }else{
                 System.out.println("Invalid Input");
                 System.out.println("Enter initial deposit amount");
-                account = input.nextLine();
+                account = input.nextInt();
             }
         }
         //deposit = inital deposit
 
-
+        System.out.println("creating account...");
+        Account account1 = new Account(deposit,notif,contact);
+        System.out.println("account created");
 
 
         for (int i = 1; i <= 5; i++) {
