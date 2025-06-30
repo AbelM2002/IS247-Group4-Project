@@ -55,6 +55,34 @@ public class Main {
         Account account1 = new Account(deposit,notif,contact);
         System.out.println("account created");
 
+        int x = 0;
+        int amount;
+        while(x == 0) {
+            System.out.println("What would you like to do?");
+            System.out.println("View Balance ... B");
+            System.out.println("Deposit ... D");
+            System.out.println("Withdraw ... W");
+            System.out.println("Quit ... Q");
+            String in = input.nextLine();
+            System.out.println("h");
+
+            if (Objects.equals(in, "Q")){
+                x++;
+                System.out.println("Quiting");
+            } else if (Objects.equals(in, "B")) {
+                account1.balance();
+            }else if (Objects.equals(in, "D")) {
+                System.out.println("Enter deposit amount:");
+                amount = input.nextInt();
+                account1.deposit(amount);
+            }else if (Objects.equals(in, "W")) {
+                amount = input.nextInt();
+                account1.withdraw(amount);
+            }else{
+                System.out.println("Invalid Input");
+            }
+        }
+
 
         for (int i = 1; i <= 5; i++) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
