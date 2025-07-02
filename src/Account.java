@@ -4,31 +4,39 @@ class Account{
     private int balance;
     private String notification;
     private String contact;
-    //notification and contact are fluff, were used for API
 
     public Account(int balance, String notification String contact) {
         this.balance = balance;
         this.notification = notification;
         this.contact = contact;
     }
-}
 
     public void balance() {
-        System.out.println("balance is: " + balance + "/n");
+        notify("balance is: " + balance,notification,contact);
     }
 
     public void deposit(int x){
         balance = balance + x;
-        System.out.println(x + " dollars have been deposited \n");
+        notify(x + " dollars have been deposited" + balance,notification,contact);
     }
 
     public void withdraw(int x){
         int temp = balance + x;
         if(temp < 0){
-            System.out.println("overdrawn \n");
+            notify("overdrawn" + balance,notification,contact);
         }else{
             balance = balance - x;
-            System.out.println(x + " dollars have been withdrawn \n");
+            notify(x + " dollars have been withdrawn" + balance,notification,contact);
         }
     }
-
+    
+     private void notify(String s, String notification,String contact) {
+        if(Objects.equals(notification, "e")){
+            System.out.println("email to " + contact +  ": " + s +"\n");
+        } else if (Objects.equals(notification, "s")) {
+            System.out.println("sms to " + contact + ": : " + s +"\n");
+        } else if (Objects.equals(notification, "w")) {
+            System.out.println("whatsapp message to" + contact + ": : " + s +"\n");
+        }
+    }   
+}
